@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+div.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+div.header h1 {
+    color: white;
+    margin: 0;
+}
+div.sobres {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+div.sobre {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+div.sobre img {
+    width: 100px;
+    height: 100px;
+}
+div.album {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+div.figurita {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+div.figurita img {
+    width: 100px;
+    height: 100px;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton:hover {
+    background-color: #0056b3;
+    font-family: comic sans ms;
+}
+
+div.mis-figuritas {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.registro {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#7209b7, #3f37c0);
+}
+
+.contenedor {
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0,0,0, 0.5);
+    border-radius: 10px;
+}
+
+.contenedor h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #4cc9f0;
+    text-align: center;
+}
+
+.contenedor .elemento label {
+    color: #fff;
+}
+
+.contenedor .elemento input {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+}
+
+.contenedor .elemento input[type="submit"] {
+    background: #4cc9f0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+}

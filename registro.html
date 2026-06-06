@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="/estilos.css">
 </head>
 <body class="registro">
-    <a style="color: white; text-decoration: underline;" href="https://alex-wd-creator.github.io/tp-07-HTML/">Volver al Album</a>
+    <a style="color: white; text-decoration: underline;" href="/index.html">Volver al Album</a>
     <div class="contenedor">
         <h2>Registro de Usuario</h2>
         <form>
@@ -28,16 +28,69 @@
                 <input type="number" id="age" name="age" required min="6" max=""><br><br>
             </div>
             <div class="elemento">
+                <br>
+                <label>Categoría de Álbum Preferido:</label><br><br>
                 <label for="inicial">Álbum Inicial</label><br>
                 <input type="radio" id="inicial" name="categoria_album" value="Inicial">
                 
                 <label for="avanzado">Álbum Avanzado</label><br>
                 <input type="radio" id="avanzado" name="categoria_album" value="Avanzado">
                 
-                <label for="legendaria">Álbum Legendaria</label>
+                <label for="legendaria">Álbum Legendaria</label><br>
                 <input type="radio" id="legendaria" name="categoria_album" value="Legendaria">
                 
             </div>
+
+            <div class="elemento">
+                <br><br>
+                <label>Temáticas de Interés:</label><br><br>
+
+                <label for="interes">Fútbol</label>
+                <input type="checkbox" id="interes" name="interes" required><br><br>
+
+                <label for="interes">Cómics</label>
+                <input type="checkbox" id="interes" name="interes" required><br><br>
+
+                <label for="interes">Series</label>
+                <input type="checkbox" id="interes" name="interes" required><br><br>
+
+                <label for="interes">Música</label>
+                <input type="checkbox" id="interes" name="interes" required><br><br>
+            </div>
+
+            <div class="elemento">
+                <br>
+                <label>Sección del Álbum a Completar:</label><br><br>
+
+                <label for="seccion_album">Selecciona una sección:</label>
+                <select id="seccion_album" name="seccion_album">
+                    <option value="">-- Elige una opción --</option>
+                    <option value="jugadores">Jugadores</option>
+                    <option value="estadios">Estadios</option>
+                    <option value="equipos">Equipos</option>
+                    <option value="leyendas">Leyendas</option>
+                    <option value="especiales">Figuras Especiales</option>
+                </select>
+            </div>
+
+            <div class="elemento">
+                <br><br>
+                <label>ID de Sesión</label>
+
+                <label for="id_sesion">Código de Usuario:</label>
+                <input type="text" id="id_sesion" name="id_sesion" value="100" readonly>
+            </div>
+
+            <div class="elemento">
+                <br><br>
+                <input type="hidden" name="sistema" value="SistemaAlbumWeb-v2">
+            </div>
+
+            <div class="elemento">
+                <label for="resena">Describe tu perfil o indica las figuritas que te faltan:</label><br>
+                <textarea id="resena" name="resena" rows="5" cols="50"></textarea>
+            </div>
+
             <div class="elemento">
                 <input type="submit" value="Registrar">
             </div>
